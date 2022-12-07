@@ -1,16 +1,12 @@
 import { useState } from 'react'
 import { atom, useRecoilValue, useSetRecoilState, useRecoilState } from 'recoil'
-
-const list = atom({
-  key: "list",
-  default: ""
-})
+import { list } from './Atoms'
 
 function TextInput() {
 
   // const listState = useRecoilValue(list);
   // const updateList = useSetRecoilState(list);
-  
+
   const [text, setText] = useRecoilState(list);
 
   const onChange = (event:any) => {
