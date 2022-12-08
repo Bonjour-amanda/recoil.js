@@ -18,7 +18,7 @@ function TextInput() {
         <div>
             <input type="text" value={text} onChange={onChange} />
             <br />
-            Echo: {text}
+            Text: {text}
         </div>
     </div>
   )
