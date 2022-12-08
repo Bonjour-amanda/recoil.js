@@ -3,16 +3,18 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import TextInput from './components/TextInput'
 import CharacterCount from './components/ChracterCount'
-import { atom, useRecoilValue, useSetRecoilState, useRecoilState } from 'recoil'
+import { atom, useRecoilValue, useSetRecoilState, useRecoilState, RecoilRoot } from 'recoil'
 
 
 function App() {
 
   return (
-    <div className="App">
-      <TextInput />
-      <CharacterCount />
-    </div>
+    <RecoilRoot >
+      <div className="App">
+        <TextInput />
+        <CharacterCount />
+      </div>
+    </RecoilRoot>
   )
 }
 
