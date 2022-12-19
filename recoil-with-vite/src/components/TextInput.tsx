@@ -4,8 +4,8 @@ import { list } from './Atoms'
 
 function TextInput() {
 
-  // const textState = useRecoilValue(list); //read only
-  // const updateText = useSetRecoilState(list); //write only
+  // const text = useRecoilValue(list); //read only
+  // const setText = useSetRecoilState(list); //write only
 
   const [text, setText] = useRecoilState(list);
 

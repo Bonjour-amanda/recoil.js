@@ -9,12 +9,10 @@ import { atom, useRecoilValue, useSetRecoilState, useRecoilState, RecoilRoot } f
 function App() {
 
   return (
-    <RecoilRoot >
       <div className="App">
         <TextInput />
         <CharacterCount />
       </div>
-    </RecoilRoot>
   )
 }
 
